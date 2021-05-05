@@ -32,7 +32,7 @@ def convert_all_pdf_to_image(file, extension="*"):
     try:
         pages = convert_from_path(file, 500)
         print("nombre de pages " + pages)
-        k = 1;
+        k = 1
         if(len(pages) == 2):
             open_cv_image1 = np.array(pages[0]) 
             # Convert RGB to BGR 
