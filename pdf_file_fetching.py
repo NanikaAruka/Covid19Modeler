@@ -47,6 +47,7 @@ def get_pdfs(my_url):
         date=""
         if link.get_text().split(" ")[0].isdigit():
             date = link.get_text()
+            dates.append(date)
 
         if current_link and current_link.endswith('pdf'):
             if og_url:
@@ -55,7 +56,6 @@ def get_pdfs(my_url):
             else:
             
                 links.append(current_link)
-                dates.append(date)
                 well_formatted_links.append(current_link.replace('http://www.sante.gouv.sn','https://sante.sec.gouv.sn'))
 
     # print(well_formatted_links)
