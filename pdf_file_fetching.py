@@ -29,6 +29,7 @@ def check_validity(my_url):
 
 def get_pdfs(my_url):
     links = []
+    dates = []
     well_formatted_links = []
     timeout= 1000000
     context = ssl._create_unverified_context()
@@ -40,25 +41,27 @@ def get_pdfs(my_url):
     og_url = html_page.find("meta",  property = "og:url")
     base = urlparse(unquote(my_url))
     print("base",base)
-    for link in html_page.find_all('a'):
+    tags = html_page.find_all(['a','strong'])
+    for link in tags:
         current_link = link.get('href')
-        if current_link.endswith('pdf'):
+        date=""
+        if link.get_text().split(" ")[0].isdigit():
+            date = link.get_text()
+            dates.append(date)
+
+        if current_link and current_link.endswith('pdf'):
             if og_url:
-                print("currentLink",current_link)
+                # print("currentLink",current_link)
                 links.append(og_url["content"] + current_link)
             else:
             
                 links.append(current_link)
-
                 well_formatted_links.append(current_link.replace('http://www.sante.gouv.sn','https://sante.sec.gouv.sn'))
 
-    print(well_formatted_links)
-
-    count=0
-    for link in well_formatted_links:
-        count=count+1
-        filename = Path('./pdf/covidFile'+str(count)+'.pdf')
-        
+    # print(well_formatted_links)
+    
+    for i,link in enumerate(well_formatted_links):
+        filename = Path('./pdf/covidFile'+'_'+'-'.join(dates[i].split(" "))+'_'+str(i)+'.pdf')
         try: 
             response=requests.get(link,headers=headers)
             filename.write_bytes(response.content)
