@@ -1,0 +1,93 @@
+{
+    "date": "Vendredi 12 mars 2021",
+    "nombreDeTest": 1935,
+    "positifs": 77,
+    "tauxPositifs": "1023",
+    "cas_contact": "77",
+    "cas_importe": 0,
+    "cas_communautaire": "121",
+    "localities": [
+        {
+            "07": [
+                "Rufisque"
+            ]
+        },
+        {
+            "04": [
+                "Parcelles",
+                "Assainies"
+            ]
+        },
+        {
+            "03": [
+                "Maristes,",
+                "Amitié"
+            ]
+        },
+        {
+            "1": [
+                "Almadies",
+                "Yoff,",
+                "HLM",
+                "Grand-Yoff,",
+                "Guédiawaye",
+                "Pikine"
+            ]
+        },
+        {
+            "02": [
+                "Dieuppeul;",
+                "Liberté",
+                "5,",
+                "Liberté",
+                "6,",
+                "Point",
+                "E",
+                "Cité",
+                "CPI,",
+                "Ngor,",
+                "Diamniadio",
+                "Keur",
+                "Massar"
+            ]
+        },
+        {
+            "01": [
+                "Plateau;",
+                "Médina;",
+                "Colobane;",
+                "Derklé,",
+                "HLM",
+                "1,",
+                "Liberté"
+            ]
+        },
+        {
+            "1": [
+                "Niary",
+                "Tally,",
+                "Mamelles;",
+                "Mermoz;",
+                "Cité",
+                "Djiky",
+                "Mbaye;",
+                "Cité",
+                "Mourtada;",
+                "Nord-",
+                "Foire;",
+                "Sicap",
+                "Foire;",
+                "Sacré",
+                "Cœur;",
+                "Cité",
+                "SOPRIM,",
+                "Cambéréne;",
+                "Zone",
+                "de",
+                "Captage;",
+                "Patte",
+                "d'Oie,"
+            ]
+        }
+    ]
+}
