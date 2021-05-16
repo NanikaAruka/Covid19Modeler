@@ -10,7 +10,6 @@ from urllib.parse import urlparse
 from urllib.parse import unquote
 from urllib.request import urlopen
 import urllib.request 
-
 # coding: utf-8
 
 URL =u'https://sante.sec.gouv.sn/Présentation/coronavirus-informations-officielles-et-quotidiennes-du-msas'

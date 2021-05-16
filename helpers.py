@@ -1,6 +1,8 @@
 import re
 
 class Helpers:
+
+
     def nbCas_per_loc(text):
         textArr = re.split(',',text)
         notAllowed = [",","à","aux","",";"]
@@ -13,3 +15,8 @@ class Helpers:
         myDict[textArr[0].split(" ")[-1]] = nbCas
         return myDict
 
+    # text = "01 à reubeuss, fann residence, lib 6, ouest foire."
+
+    # dico = nbCas_per_loc(text)
+
+    # print(dico)
