@@ -1,8 +1,8 @@
-{
+[{
     "date": "Samedi 19 d\u00e9cembre 2020",
     "nombreDeTest": 1819,
     "positifs": 111,
     "tauxPositifs": "6,10",
     "cas_contact": "43",
     "cas_communautaire": "68"
-}
+}]

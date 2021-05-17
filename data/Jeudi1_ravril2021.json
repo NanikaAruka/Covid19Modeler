@@ -1,8 +1,8 @@
-{
+[{
     "date": "Jeudi 1\"r avril 2021",
     "nombreDeTest": 1659,
     "positifs": 77,
     "tauxPositifs": "4,64%",
     "cas_contact": "17",
     "cas_communautaire": "60"
-}
+}]

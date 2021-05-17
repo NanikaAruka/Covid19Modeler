@@ -1,8 +1,8 @@
-{
+[{
     "date": "Lundi 22 mars 2021",
-    "nombreDeTest": 1398,
-    "positifs": 87,
+    "nombreDeTest": "1398",
+    "positifs": "87",
     "tauxPositifs": "622%",
     "cas_contact": "30",
     "cas_communautaire": "57"
-}
+}]

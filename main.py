@@ -24,12 +24,16 @@ def insert_data():
     cursor = con.cursor()
 
     for i, item in enumerate(json_obj):
-        person = validate_string(item.get("person", None))
-        year = validate_string(item.get("year", None))
-        company = validate_string(item.get("company", None))
+        date = validate_string(item.get("date", None))
+        nombreDeTest = validate_string(item.get("nombreDeTest", None))
+        positifs = validate_string(item.get("positifs", None))
+        tauxPositifs = validate_string(item.get("tauxPositifs", None))
+        cas_contact = validate_string(item.get("cas_contact", None))
+        cas_communautaire = validate_string(item.get("cas_communautaire", None))
 
-        cursor.execute("INSERT INTO testp (person,	year,	company) VALUES (%s,	%s,	%s)",
-                       (person, year, company))
+        cursor.execute("INSERT INTO testp (date, nombreDeTest,	positifs, tauxPositifs, cas_contact, "
+                       "cas_communautaire) VALUES (%s,	%s,	%s,	%s,	%s,	%s )",
+                       (date, nombreDeTest, positifs, tauxPositifs, cas_contact, cas_communautaire))
     con.commit()
     con.close()
 
@@ -46,12 +50,18 @@ def view_data():
     with open(file, "r") as f:
         temp = json.load(f)
         for entry in temp:
-            person = entry["person"]
-            year = entry["year"]
-            company = entry["company"]
-            print(f"le nom : {person}")
-            print(f"l annee : {year}")
-            print(f"la compagnie : {company}")
+            date = entry["date"]
+            nombreDeTest = entry["nombreDeTest"]
+            positifs = entry["positifs"]
+            tauxPositifs = entry["tauxPositifs"]
+            cas_contact = entry["cas_contact"]
+            cas_communautaire = entry["cas_communautaire"]
+            print(f"La date : {date}")
+            print(f"Le nombres de tests : {nombreDeTest}")
+            print(f"Le nombre de tests positifs : {positifs}")
+            print(f"Le taux de positivité : {tauxPositifs}")
+            print(f"Le nombre de cas contacts : {cas_contact}")
+            print(f"Le nombre de cas communautaires : {cas_communautaire}")
             print("\n\n")
 
 
