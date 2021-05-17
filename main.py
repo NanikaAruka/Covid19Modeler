@@ -1,9 +1,6 @@
 import json
 import pymysql
-
-file = "C:/Users/Main/MERN/test.json"
-json_data = open(file).read()
-json_obj = json.loads(json_data)
+import easygui
 
 
 def validate_string(val):
@@ -17,6 +14,11 @@ def validate_string(val):
 
 
 def insert_data():
+    # open the explorer so the user can select the desired file
+    file = easygui.fileopenbox()
+    json_data = open(file).read()
+    json_obj = json.loads(json_data)
+
     # connect to MySQL
     con = pymysql.connect(host='localhost', user='root', passwd='', db='testjson')
     cursor = con.cursor()
@@ -40,6 +42,7 @@ def choices():
 
 
 def view_data():
+    file = easygui.fileopenbox()
     with open(file, "r") as f:
         temp = json.load(f)
         for entry in temp:

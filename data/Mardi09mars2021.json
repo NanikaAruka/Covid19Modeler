@@ -1,0 +1,49 @@
+{
+    "date": "Mardi 09 mars 2021",
+    "nombreDeTest": 1028,
+    "positifs": 6,
+    "tauxPositifs": "778",
+    "cas_contact": "22",
+    "cas_importe": 0,
+    "cas_communautaire": "58",
+    "localities": [
+        {
+            "05": [
+                "Plateau"
+            ]
+        },
+        {
+            "04": [
+                "Rufisque"
+            ]
+        },
+        {
+            "02": [
+                "Grand-Dakar;",
+                "HLM,",
+                "Liberté",
+                "6,",
+                "Parcelles",
+                "Assainies;",
+                "HLM",
+                "Grand-Médine"
+            ]
+        },
+        {
+            "01": [
+                "Médine;",
+                "Point",
+                "E,",
+                "Ouagou",
+                "Niayes,",
+                "Niary",
+                "Tally,",
+                "Sacré",
+                "Cœur;",
+                "Diamniadio;",
+                "Guédiawaye;",
+                "Keur"
+            ]
+        }
+    ]
+}
