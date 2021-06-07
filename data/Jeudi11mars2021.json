@@ -8,79 +8,21 @@
     "cas_communautaire": "109",
     "localities": [
         {
-            "10": [
-                "Plateau"
-            ]
+            "nom":"plateau"
+	    "cas":"10"
         },
         {
-            "05": [
-                "Sacré-Cœur"
-            ]
+	    "nom":"Sacré-Cœur"
+	    "cas":"10"
+ 
         },
         {
-            "04": [
-                "Keur-Massar"
-            ]
+            "nom":"Keur Massar"
+	    "cas":"4"
         },
         {
-            "03": [
-                "Maristes;",
-                "Guédiawaye"
-            ]
-        },
-        {
-            "02": [
-                "HLM,",
-                "Ouakam;",
-                "Mamelles;",
-                "Yoff,",
-                "Parcelles",
-                "Assainies,",
-                "Malika",
-                "Yeumbeul"
-            ]
-        },
-        {
-            "01": [
-                "HLM",
-                "Fass;",
-                "Colobane;",
-                "Amitié",
-                "2,",
-                "Zone",
-                "B;",
-                "Dieuppeul;",
-                "Liberté",
-                "5,",
-                "Liberté",
-                "6,",
-                "Liberté"
-            ]
-        },
-        {
-            "3": [
-                "Niary",
-                "Tally;",
-                "Cité",
-                "Biagui;",
-                "Sud",
-                "Foire;",
-                "HLM",
-                "Grand-Médine,",
-                "Zac",
-                "Mbao,",
-                "Keur",
-                "Mbaye",
-                "Fall,",
-                "Pikine;",
-                "Rufisque,",
-                "Sankalkam;",
-                "Niakhirate;",
-                "Bambilor",
-                "keur",
-                "Ndiaye",
-                "LO."
-            ]
+            "nom":"Mariste - Guediawaye"
+	    "cas":"3"
         }
     ]
 }]
